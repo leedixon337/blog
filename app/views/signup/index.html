@@ -1,0 +1,15 @@
+<p>This is the signup index</p>
+
+
+<%= form_for :Posts do |m| %>
+<%= m.text_field :content %>
+<%= m.submit "create" %>
+<% end %>
+
+
+
+<div class="message_display">
+  <% @messages.each do |m| %>
+  <li><%= m.content %></li>
+  <% end %>
+</div>
